@@ -1,0 +1,220 @@
+{
+  "teams": [
+    {
+      "name": "Liverpool",
+      "code": "LIV",
+      "country": "England",
+      "pot": 1
+    },
+    {
+      "name": "Monaco",
+      "code": "MON",
+      "country": "France",
+      "pot": 3
+    },
+    {
+      "name": "Bayern München",
+      "code": "BAY",
+      "country": "Germany",
+      "pot": 1
+    },
+    {
+      "name": "Club Brugge",
+      "code": "BRU",
+      "country": "Belgium",
+      "pot": 2
+    },
+    {
+      "name": "Celtic",
+      "code": "CEL",
+      "country": "Scotland",
+      "pot": 3
+    },
+    {
+      "name": "Real Madrid",
+      "code": "RMA",
+      "country": "Spain",
+      "pot": 1
+    },
+    {
+      "name": "Milan",
+      "code": "MIL",
+      "country": "Italy",
+      "pot": 2
+    },
+    {
+      "name": "PSV",
+      "code": "PSV",
+      "country": "Netherlands",
+      "pot": 3
+    },
+    {
+      "name": "Barcelona",
+      "code": "BAR",
+      "country": "Spain",
+      "pot": 1
+    },
+    {
+      "name": "Stuttgart",
+      "code": "STU",
+      "country": "Germany",
+      "pot": 4
+    },
+    {
+      "name": "Leverkusen",
+      "code": "LEV",
+      "country": "Germany",
+      "pot": 2
+    },
+    {
+      "name": "Sturm Graz",
+      "code": "SGR",
+      "country": "Austria",
+      "pot": 4
+    },
+    {
+      "name": "Atleti",
+      "code": "ATM",
+      "country": "Spain",
+      "pot": 2
+    },
+    {
+      "name": "Inter",
+      "code": "INT",
+      "country": "Italy",
+      "pot": 1
+    },
+    {
+      "name": "Juventus",
+      "code": "JUV",
+      "country": "Italy",
+      "pot": 2
+    },
+    {
+      "name": "Benfica",
+      "code": "BEN",
+      "country": "Portugal",
+      "pot": 2
+    },
+    {
+      "name": "Sporting CP",
+      "code": "SPO",
+      "country": "Portugal",
+      "pot": 3
+    },
+    {
+      "name": "Arsenal",
+      "code": "ARS",
+      "country": "England",
+      "pot": 2
+    },
+    {
+      "name": "Aston Villa",
+      "code": "AVL",
+      "country": "England",
+      "pot": 3
+    },
+    {
+      "name": "Shakhtar",
+      "code": "SHK",
+      "country": "Ukraine",
+      "pot": 2
+    },
+    {
+      "name": "Paris",
+      "code": "PSG",
+      "country": "France",
+      "pot": 1
+    },
+    {
+      "name": "Feyenoord",
+      "code": "FEY",
+      "country": "Netherlands",
+      "pot": 3
+    },
+    {
+      "name": "Dortmund",
+      "code": "BVB",
+      "country": "Germany",
+      "pot": 1
+    },
+    {
+      "name": "Atalanta",
+      "code": "ATA",
+      "country": "Italy",
+      "pot": 2
+    },
+    {
+      "name": "Man City",
+      "code": "MCI",
+      "country": "England",
+      "pot": 1
+    },
+    {
+      "name": "Bologna",
+      "code": "BOL",
+      "country": "Italy",
+      "pot": 4
+    },
+    {
+      "name": "Brest",
+      "code": "BRE",
+      "country": "France",
+      "pot": 4
+    },
+    {
+      "name": "Girona",
+      "code": "GIR",
+      "country": "Spain",
+      "pot": 4
+    },
+    {
+      "name": "Leipzig",
+      "code": "LEI",
+      "country": "Germany",
+      "pot": 1
+    },
+    {
+      "name": "Salzburg",
+      "code": "SAL",
+      "country": "Austria",
+      "pot": 3
+    },
+    {
+      "name": "Sparta Praha",
+      "code": "SPA",
+      "country": "Czechia",
+      "pot": 4
+    },
+    {
+      "name": "Galatasaray",
+      "code": "GAL",
+      "country": "Türkiye",
+      "pot": 4
+    },
+    {
+      "name": "Lille",
+      "code": "LIL",
+      "country": "France",
+      "pot": 3
+    },
+    {
+      "name": "Bodø/Glimt",
+      "code": "BOD",
+      "country": "Norway",
+      "pot": 4
+    },
+    {
+      "name": "GNK Dinamo",
+      "code": "DZG",
+      "country": "Croatia",
+      "pot": 3
+    },
+    {
+      "name": "S. Bratislava",
+      "code": "SLB",
+      "country": "Slovakia",
+      "pot": 4
+    }
+  ]
+}

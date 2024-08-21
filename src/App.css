@@ -2,37 +2,257 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.round-section {
+  margin-bottom: 40px;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.team-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.team-code {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.country-name {
+  font-style: italic;
+  color: #666;
+}
+
+.DrawSimulator {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.DrawSimulator button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.DrawSimulator button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.drawn-teams, .remaining-teams {
+  margin-top: 20px;
+}
+
+.drawn-teams ul, .remaining-teams ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.drawn-teams li, .remaining-teams li {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.pot-section {
+  margin-bottom: 30px;
+}
+
+.pot-section h3 {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.teams-inline {
+  text-align: left;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.team-inline {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.schedule {
+  margin-top: 20px;
+}
+
+.round {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.round h3 {
+  margin-top: 0;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.round ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.round li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teams-list {
+  margin-top: 20px;
+}
+
+.teams-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.teams-list li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.pot-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.pot-1 {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.pot-2 {
+  background-color: #C0C0C0;
+  color: #000;
+}
+
+.pot-3 {
+  background-color: #CD7F32;
+  color: #fff;
+}
+
+.pot-4 {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.team-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.country-flag {
+  width: 24px;
+  height: 18px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.team-selection ul, .draw-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-selection li, .draw-results li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.team-selection li:hover {
+  background-color: #e0e0e0;
+}
+
+.pot-opponents {
+  margin-bottom: 20px;
+}
+
+.pot-opponents h3 {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.match-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.vs {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.draw-results .team-display:first-child {
+  justify-content: flex-end;
+}
+
+.draw-results .team-display:last-child {
+  justify-content: flex-start;
 }
