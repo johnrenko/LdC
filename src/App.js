@@ -99,7 +99,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>UEFA Champions League Participants</h1>
+       <img src="/logo.svg" alt="UEFA Champions League Logo" className="uefa-logo" />
+       <h1>UEFA Champions League Participants</h1>
       </header>
       <main>
         {!selectedTeam ? (
