@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import roundParticipantsData from './round-participants.json';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [teams, setTeams] = useState(null);
@@ -166,6 +167,7 @@ function App() {
           </div>
         )}
       </main>
+      <Analytics />
     </div>
   );
 }
