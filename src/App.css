@@ -18,38 +18,47 @@ main {
 
 .teams-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
-  justify-items: center;
+  padding: 20px;
 }
 
 .team-card {
-  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .team-logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 10px;
 }
 
-.team-code {
+.team-name {
   font-weight: bold;
-  margin: 5px 0;
+  text-align: center;
+}
+
+.team-code {
+  font-size: 0.8em;
+  color: #666;
 }
 
 .country-name {
-  font-style: italic;
+  font-size: 0.8em;
   color: #666;
+  font-style: italic;
 }
 
 .DrawSimulator {
@@ -203,6 +212,7 @@ main {
   height: 18px;
   object-fit: cover;
   border: 1px solid #ddd;
+  margin-top: 5px;
 }
 
 .team-selection ul, .draw-results ul {
@@ -242,6 +252,11 @@ main {
   background-color: #f9f9f9;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+.match-display .team-logo {
+  width: 40px;
+  height: 40px;
 }
 
 .vs {

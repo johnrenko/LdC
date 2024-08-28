@@ -1,220 +1,254 @@
-{
-  "teams": [
-    {
-      "name": "Liverpool",
-      "code": "LIV",
-      "country": "England",
-      "pot": 1
-    },
-    {
-      "name": "Monaco",
-      "code": "MON",
-      "country": "France",
-      "pot": 3
-    },
-    {
-      "name": "Bayern München",
-      "code": "BAY",
-      "country": "Germany",
-      "pot": 1
-    },
-    {
-      "name": "Club Brugge",
-      "code": "BRU",
-      "country": "Belgium",
-      "pot": 2
-    },
-    {
-      "name": "Celtic",
-      "code": "CEL",
-      "country": "Scotland",
-      "pot": 3
-    },
-    {
-      "name": "Real Madrid",
-      "code": "RMA",
-      "country": "Spain",
-      "pot": 1
-    },
-    {
-      "name": "Milan",
-      "code": "MIL",
-      "country": "Italy",
-      "pot": 2
-    },
-    {
-      "name": "PSV",
-      "code": "PSV",
-      "country": "Netherlands",
-      "pot": 3
-    },
-    {
-      "name": "Barcelona",
-      "code": "BAR",
-      "country": "Spain",
-      "pot": 1
-    },
-    {
-      "name": "Stuttgart",
-      "code": "STU",
-      "country": "Germany",
-      "pot": 4
-    },
-    {
-      "name": "Leverkusen",
-      "code": "LEV",
-      "country": "Germany",
-      "pot": 2
-    },
-    {
-      "name": "Sturm Graz",
-      "code": "SGR",
-      "country": "Austria",
-      "pot": 4
-    },
-    {
-      "name": "Atleti",
-      "code": "ATM",
-      "country": "Spain",
-      "pot": 2
-    },
-    {
-      "name": "Inter",
-      "code": "INT",
-      "country": "Italy",
-      "pot": 1
-    },
-    {
-      "name": "Juventus",
-      "code": "JUV",
-      "country": "Italy",
-      "pot": 2
-    },
-    {
-      "name": "Benfica",
-      "code": "BEN",
-      "country": "Portugal",
-      "pot": 2
-    },
-    {
-      "name": "Sporting CP",
-      "code": "SPO",
-      "country": "Portugal",
-      "pot": 3
-    },
-    {
-      "name": "Arsenal",
-      "code": "ARS",
-      "country": "England",
-      "pot": 2
-    },
-    {
-      "name": "Aston Villa",
-      "code": "AVL",
-      "country": "England",
-      "pot": 3
-    },
-    {
-      "name": "Shakhtar",
-      "code": "SHK",
-      "country": "Ukraine",
-      "pot": 2
-    },
-    {
-      "name": "Paris",
-      "code": "PSG",
-      "country": "France",
-      "pot": 1
-    },
-    {
-      "name": "Feyenoord",
-      "code": "FEY",
-      "country": "Netherlands",
-      "pot": 3
-    },
-    {
-      "name": "Dortmund",
-      "code": "BVB",
-      "country": "Germany",
-      "pot": 1
-    },
-    {
-      "name": "Atalanta",
-      "code": "ATA",
-      "country": "Italy",
-      "pot": 2
-    },
-    {
-      "name": "Man City",
-      "code": "MCI",
-      "country": "England",
-      "pot": 1
-    },
-    {
-      "name": "Bologna",
-      "code": "BOL",
-      "country": "Italy",
-      "pot": 4
-    },
-    {
-      "name": "Brest",
-      "code": "BRE",
-      "country": "France",
-      "pot": 4
-    },
-    {
-      "name": "Girona",
-      "code": "GIR",
-      "country": "Spain",
-      "pot": 4
-    },
-    {
-      "name": "Leipzig",
-      "code": "LEI",
-      "country": "Germany",
-      "pot": 1
-    },
-    {
-      "name": "Salzburg",
-      "code": "SAL",
-      "country": "Austria",
-      "pot": 3
-    },
-    {
-      "name": "Sparta Praha",
-      "code": "SPA",
-      "country": "Czechia",
-      "pot": 4
-    },
-    {
-      "name": "Galatasaray",
-      "code": "GAL",
-      "country": "Türkiye",
-      "pot": 4
-    },
-    {
-      "name": "Lille",
-      "code": "LIL",
-      "country": "France",
-      "pot": 3
-    },
-    {
-      "name": "Bodø/Glimt",
-      "code": "BOD",
-      "country": "Norway",
-      "pot": 4
-    },
-    {
-      "name": "GNK Dinamo",
-      "code": "DZG",
-      "country": "Croatia",
-      "pot": 3
-    },
-    {
-      "name": "S. Bratislava",
-      "code": "SLB",
-      "country": "Slovakia",
-      "pot": 4
-    }
-  ]
-}
+{"teams": [
+  {
+    "name": "Manchester City",
+    "code": "MCI",
+    "country": "England",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52919.png"
+  },
+  {
+    "name": "Bayern Munich",
+    "code": "BAY",
+    "country": "Germany",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50037.png"
+  },
+  {
+    "name": "Real Madrid",
+    "code": "RMA",
+    "country": "Spain",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50051.png"
+  },
+  {
+    "name": "PSG",
+    "code": "PSG",
+    "country": "France",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52747.png"
+  },
+  {
+    "name": "Liverpool",
+    "code": "LIV",
+    "country": "England",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/7889.png"
+  },
+  {
+    "name": "Inter",
+    "code": "INT",
+    "country": "Italy",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50138.png"
+  },
+  {
+    "name": "Borussia Dortmund",
+    "code": "DOR",
+    "country": "Germany",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52758.png"
+  },
+  {
+    "name": "Leipzig",
+    "code": "LEI",
+    "country": "Germany",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/2603790.png"
+  },
+  {
+    "name": "Barcelona",
+    "code": "BAR",
+    "country": "Spain",
+    "pot": 1,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50080.png"
+  },
+  {
+    "name": "Bayer Leverkusen",
+    "code": "LEV",
+    "country": "Germany",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50109.png"
+  },
+  {
+    "name": "Atlético Madrid",
+    "code": "ATM",
+    "country": "Spain",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50124.png"
+  },
+  {
+    "name": "Atalanta",
+    "code": "ATA",
+    "country": "Italy",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52816.png"
+  },
+  {
+    "name": "Juventus",
+    "code": "JUV",
+    "country": "Italy",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50139.png"
+  },
+  {
+    "name": "Benfica",
+    "code": "BEN",
+    "country": "Portugal",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50147.png"
+  },
+  {
+    "name": "Arsenal",
+    "code": "ARS",
+    "country": "England",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52280.png"
+  },
+  {
+    "name": "Club Brugge",
+    "code": "BRU",
+    "country": "Belgium",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50043.png"
+  },
+  {
+    "name": "Shakhtar Donetsk",
+    "code": "SHK",
+    "country": "Ukraine",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52707.png"
+  },
+  {
+    "name": "AC Milan",
+    "code": "MIL",
+    "country": "Italy",
+    "pot": 2,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50058.png"
+  },
+  {
+    "name": "Feyenoord",
+    "code": "FEY",
+    "country": "Netherlands",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52749.png"
+  },
+  {
+    "name": "Sporting CP",
+    "code": "SPO",
+    "country": "Portugal",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50149.png"
+  },
+  {
+    "name": "PSV",
+    "code": "PSV",
+    "country": "Netherlands",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50062.png"
+  },
+  {
+    "name": "Dinamo Zagreb",
+    "code": "DZG",
+    "country": "Croatia",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50164.png"
+  },
+  {
+    "name": "Salzburg",
+    "code": "SAL",
+    "country": "Austria",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50030.png"
+  },
+  {
+    "name": "Lille",
+    "code": "LIL",
+    "country": "France",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/75797.png"
+  },
+  {
+    "name": "Crvena Zvezda",
+    "code": "CZV",
+    "country": "Serbia",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50069.png"
+  },
+  {
+    "name": "Young Boys",
+    "code": "YB",
+    "country": "Switzerland",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50031.png"
+  },
+  {
+    "name": "Celtic",
+    "code": "CEL",
+    "country": "Scotland",
+    "pot": 3,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50050.png"
+  },
+  {
+    "name": "Slovan Bratislava",
+    "code": "SLO",
+    "country": "Slovakia",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52957.png"
+  },
+  {
+    "name": "AS Monaco",
+    "code": "MON",
+    "country": "France",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50023.png"
+  },
+  {
+    "name": "Sparta Praha",
+    "code": "SPP",
+    "country": "Czech Republic",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50033.png"
+  },
+  {
+    "name": "Aston Villa",
+    "code": "AVL",
+    "country": "England",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52683.png"
+  },
+  {
+    "name": "Bologna",
+    "code": "BOL",
+    "country": "Italy",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/50120.png"
+  },
+  {
+    "name": "Girona",
+    "code": "GIR",
+    "country": "Spain",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/2602798.png"
+  },
+  {
+    "name": "Stuttgart",
+    "code": "STU",
+    "country": "Germany",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52744.png"
+  },
+  {
+    "name": "Sturm Graz",
+    "code": "SGR",
+    "country": "Austria",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52827.png"
+  },
+  {
+    "name": "Stade Brestois",
+    "code": "BRE",
+    "country": "France",
+    "pot": 4,
+    "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/2601306.png"
+  }
+]}
