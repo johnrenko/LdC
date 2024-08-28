@@ -131,6 +131,7 @@ function App() {
           )
         ) : (
           <div className="draw-results">
+            <button onClick={resetSelection}>Back to Teams</button>
             <h2>Potential Opponents for {selectedTeam.name}</h2>
             {[1, 2, 3, 4].map(pot => (
               <div key={pot} className="pot-opponents">
@@ -141,13 +142,17 @@ function App() {
                       {opponent.isHome ? (
                         <>
                           {renderTeamLogo(selectedTeam)}
+                          <span className="team-name">{selectedTeam.name}</span>
                           <span className="vs">vs</span>
+                          <span className="team-name">{opponent.name}</span>
                           {renderTeamLogo(opponent)}
                         </>
                       ) : (
                         <>
                           {renderTeamLogo(opponent)}
+                          <span className="team-name">{opponent.name}</span>
                           <span className="vs">vs</span>
+                          <span className="team-name">{selectedTeam.name}</span>
                           {renderTeamLogo(selectedTeam)}
                         </>
                       )}
