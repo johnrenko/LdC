@@ -256,3 +256,31 @@ main {
 .draw-results .team-display:last-child {
   justify-content: flex-start;
 }
+
+.team-display.clickable {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.team-display.clickable:hover {
+  background-color: #e0e0e0;
+}
+
+.secondary-draw {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.secondary-draw h3 {
+  margin-top: 0;
+}
+
+.secondary-draw .pot-opponents {
+  margin-bottom: 15px;
+}
+
+.secondary-draw h4 {
+  margin-bottom: 10px;
+}

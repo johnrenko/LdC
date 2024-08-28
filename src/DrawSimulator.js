@@ -5,6 +5,8 @@ function DrawSimulator() {
   const [teams, setTeams] = useState([]);
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [opponents, setOpponents] = useState({});
+  const [secondaryTeam, setSecondaryTeam] = useState(null);
+  const [secondaryOpponents, setSecondaryOpponents] = useState({});
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -28,21 +30,35 @@ function DrawSimulator() {
 
   const selectTeam = (team) => {
     setSelectedTeam(team);
+    setSecondaryTeam(null);
+    setSecondaryOpponents({});
     generateOpponents(team);
   };
 
-  const generateOpponents = (team) => {
+  const selectSecondaryTeam = (team) => {
+    setSecondaryTeam(team);
+    generateOpponents(team, setSecondaryOpponents, selectedTeam);
+  };
+
+  const generateOpponents = (team, setOpponentsFunction = setOpponents, fixedOpponent = null) => {
     const potOpponents = {1: [], 2: [], 3: [], 4: []};
     
-    // Shuffle the teams array
     const shuffledTeams = [...teams].sort(() => Math.random() - 0.5);
     
+    // If there's a fixed opponent, add it first
+    if (fixedOpponent) {
+      potOpponents[fixedOpponent.pot].push({
+        ...fixedOpponent,
+        isHome: Math.random() < 0.5 // Randomize home/away for the fixed opponent
+      });
+    }
+
     shuffledTeams.forEach(opponent => {
-      if (opponent.country !== team.country && opponent !== team) {
+      if (opponent.country !== team.country && opponent !== team && opponent !== fixedOpponent) {
         if (potOpponents[opponent.pot].length < 2) {
           potOpponents[opponent.pot].push({
             ...opponent,
-            isHome: potOpponents[opponent.pot].length === 0 // First opponent is home, second is away
+            isHome: potOpponents[opponent.pot].length === 0
           });
         }
       }
@@ -50,7 +66,7 @@ function DrawSimulator() {
 
     // Ensure each pot has exactly two opponents if possible
     Object.keys(potOpponents).forEach(pot => {
-      if (potOpponents[pot].length === 1) {
+      if (potOpponents[pot].length === 1 && parseInt(pot) !== team.pot) {
         const additionalOpponent = shuffledTeams.find(t => 
           t.pot === parseInt(pot) && 
           t.country !== team.country && 
@@ -60,18 +76,20 @@ function DrawSimulator() {
         if (additionalOpponent) {
           potOpponents[pot].push({
             ...additionalOpponent,
-            isHome: !potOpponents[pot][0].isHome // Opposite of the first opponent
+            isHome: !potOpponents[pot][0].isHome
           });
         }
       }
     });
 
-    setOpponents(potOpponents);
+    setOpponentsFunction(potOpponents);
   };
 
   const resetSelection = () => {
     setSelectedTeam(null);
     setOpponents({});
+    setSecondaryTeam(null);
+    setSecondaryOpponents({});
   };
 
   const getCountryCode = (country) => {
@@ -96,8 +114,8 @@ function DrawSimulator() {
     return countryMap[country] || 'unknown';
   };
 
-  const renderTeam = (team) => (
-    <span className="team-display">
+  const renderTeam = (team, onClick = null) => (
+    <span className={`team-display ${onClick ? 'clickable' : ''}`} onClick={onClick}>
       <img 
         src={`https://flagcdn.com/24x18/${getCountryCode(team.country)}.png`} 
         alt={`${team.country} flag`}
@@ -139,11 +157,11 @@ function DrawSimulator() {
                       <>
                         {renderTeam(selectedTeam)}
                         <span className="vs">vs</span>
-                        {renderTeam(opponent)}
+                        {renderTeam(opponent, () => selectSecondaryTeam(opponent))}
                       </>
                     ) : (
                       <>
-                        {renderTeam(opponent)}
+                        {renderTeam(opponent, () => selectSecondaryTeam(opponent))}
                         <span className="vs">vs</span>
                         {renderTeam(selectedTeam)}
                       </>
@@ -153,6 +171,35 @@ function DrawSimulator() {
               </ul>
             </div>
           ))}
+          {secondaryTeam && (
+            <div className="secondary-draw">
+              <h3>Potential Opponents for {secondaryTeam.name}</h3>
+              {[1, 2, 3, 4].map(pot => (
+                <div key={pot} className="pot-opponents">
+                  <h4>Pot {pot}</h4>
+                  <ul>
+                    {secondaryOpponents[pot] && secondaryOpponents[pot].map((opponent, index) => (
+                      <li key={index} className="match-display">
+                        {opponent.isHome ? (
+                          <>
+                            {renderTeam(secondaryTeam)}
+                            <span className="vs">vs</span>
+                            {renderTeam(opponent)}
+                          </>
+                        ) : (
+                          <>
+                            {renderTeam(opponent)}
+                            <span className="vs">vs</span>
+                            {renderTeam(secondaryTeam)}
+                          </>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
           <button onClick={resetSelection}>Select Another Team</button>
         </div>
       )}
