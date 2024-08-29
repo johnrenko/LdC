@@ -47,7 +47,6 @@ main {
 
 .team-name {
   font-weight: bold;
-  text-align: center;
 }
 
 .team-code {
@@ -322,6 +321,7 @@ button {
 
 .team-container.left {
   justify-content: flex-start;
+  text-align: left;
 }
 
 .team-container.right {
