@@ -144,19 +144,27 @@ function App() {
                     <li key={index} className="match-display">
                       {opponent.isHome ? (
                         <>
-                          {renderTeamLogo(selectedTeam)}
-                          <span className="team-name">{selectedTeam.name}</span>
+                          <span className="team-container left">
+                            {renderTeamLogo(selectedTeam)}
+                            <span className="team-name">{selectedTeam.name}</span>
+                          </span>
                           <span className="vs">vs</span>
-                          <span className="team-name">{opponent.name}</span>
-                          {renderTeamLogo(opponent)}
+                          <span className="team-container right">
+                            <span className="team-name">{opponent.name}</span>
+                            {renderTeamLogo(opponent)}
+                          </span>
                         </>
                       ) : (
                         <>
-                          {renderTeamLogo(opponent)}
-                          <span className="team-name">{opponent.name}</span>
+                          <span className="team-container left">
+                            {renderTeamLogo(opponent)}
+                            <span className="team-name">{opponent.name}</span>
+                          </span>
                           <span className="vs">vs</span>
-                          <span className="team-name">{selectedTeam.name}</span>
-                          {renderTeamLogo(selectedTeam)}
+                          <span className="team-container right">
+                            <span className="team-name">{selectedTeam.name}</span>
+                            {renderTeamLogo(selectedTeam)}
+                          </span>
                         </>
                       )}
                     </li>

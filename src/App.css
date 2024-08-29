@@ -308,3 +308,23 @@ button {
 .secondary-draw h4 {
   margin-bottom: 10px;
 }
+
+.team-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 40%;
+}
+
+.team-container img {
+  margin: auto 0;
+}
+
+.team-container.left {
+  justify-content: flex-start;
+}
+
+.team-container.right {
+  justify-content: flex-end;
+  text-align: right;
+}
