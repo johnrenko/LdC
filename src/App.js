@@ -108,6 +108,7 @@ function App() {
           teams ? (
             <section className="round-section">
               <h2>League Phase Teams</h2>
+              <span>Just tap on a team to see who they could play in the league phase.</span>
               {[1, 2, 3, 4].map(pot => (
                 <div key={pot} className="pot-section">
                   <h3>Pot {pot}</h3>
